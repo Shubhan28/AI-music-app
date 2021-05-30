@@ -1,0 +1,43 @@
+.heading
+{
+    font-size: 23px;
+    width: 100%;
+    margin: 0;
+    box-shadow: 5px 5px 5px grey;
+}
+.note
+{
+    font-size: 15px;
+    color: indigo;
+}
+@keyframes example
+{
+    0%{background-color: lightcoral; font-size: 25px; }
+    25%{background-color:lightgreen; font-size: 30px; }
+    50%{background-color: crimson; font-size: 32px; }
+    60%{background-color: rebeccapurple; font-size: 35px; }
+    70%{background-color: blue; font-size: 37px; }
+    75%{background-color: green; font-size: 38px; }
+    80%{background-color: greenyellow; font-size: 39px; }
+    100%{background-color: hotpink; font-size: 40px; }
+}
+.copy_right-footer
+{
+    background-color: lawngreen;
+    font-size: 25px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    line-height: 3;
+    animation-name: example;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+}
+canvas 
+{
+    border: 5px solid green;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 20px;
+    
+}
