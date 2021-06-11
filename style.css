@@ -51,4 +51,5 @@ canvas
     border: 5px ridge blue;
     border-radius: 20px;
     box-shadow: 5px 5px 5px gray;
+    margin-top: 100px;
 }
