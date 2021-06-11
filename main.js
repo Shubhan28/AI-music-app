@@ -45,7 +45,17 @@ function draw()
         if(what == false)
         {
            song1.play();
-           document.getElementsByTagName("h1").innerHTML = "Song : Peter Pan";
+           document.getElementsById("song_display").innerHTML = "Song : Peter Pan";
+        }
+    }
+    if(score_rightWrist > 0.2)
+    {
+        circle(rightWristX, rightWristY, 30);
+        song1.stop();
+        if(what == true)
+        {
+            song2.play();
+            document.getElementById("song_display").innerHTML = "Song : Harry Potter theme";
         }
     }
     
@@ -66,5 +76,9 @@ function gotposes(poses)
        leftWristY = poses[0].pose.leftWrist.y;
        score_leftWrist = poses[0].pose.keypoints[9].score;
        rint("Left Wrist X = "+leftWristX, "Left Wrist Y = "+leftWristY);
+       rightWristX = poses[0].pose.rightWrist.x;
+       rightWristY = poses[0].pose.rightWrist.y;
+       score_rightWrist = poses[0].pose.keypoints[10].score;
+       rint("Right Wrist X = "+rightWristX, "Right Wrist Y = "+rightWristY);
     }
 }
